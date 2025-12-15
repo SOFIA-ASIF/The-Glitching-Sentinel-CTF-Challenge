@@ -6,11 +6,7 @@ function sleep(ms) {
 }
 
 
-export async function GET() {
-  return Response.json({
-    message: "Use POST with JSON: { flag: \"...\" }"
-  });
-}
+
 
 
 export async function POST(request) {
