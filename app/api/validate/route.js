@@ -5,6 +5,14 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+
+export async function GET() {
+  return Response.json({
+    message: "Use POST with JSON: { flag: \"...\" }"
+  });
+}
+
+
 export async function POST(request) {
   try {
     const body = await request.json();
